@@ -1,0 +1,70 @@
+🔹 Step 1: Clone Repository
+git clone https://github.com/KalyanM45/AI-Project-Gallery.git
+cd AI-Project-Gallery
+👉 This downloads the project to your local system
+________________________________________
+🔹 Step 2: Verify Branch Creation Restriction
+git checkout -b test-branch
+👉 You may get permission issues when pushing:
+git push origin test-branch
+❌ Error:
+permission denied
+👉 This shows:
+You cannot create branches directly in original repository (no write access)
+________________________________________
+🔹 Step 3: Fork Repository
+1.	Open repository on GitHub 
+2.	Click Fork (top-right) 
+3.	A copy is created in your account 
+________________________________________
+🔹 Step 4: Clone Your Fork
+git clone https://github.com/your-username/AI-Project-Gallery.git
+cd AI-Project-Gallery
+________________________________________
+🔹 Step 5: Create Feature Branch
+git checkout -b GIT-EXAM
+________________________________________
+🔹 Step 6: Add / Modify Code
+Example:
+nano program.py
+👉 Sample Code:
+print("AI Project Updated")
+________________________________________
+🔹 Step 7: Add, Commit and Push
+git add .
+git commit -m "Added new feature"
+git push origin GIT-EXAM
+________________________________________
+🔹 Step 8: Create Pull Request
+👉 On GitHub:
+1.	Open your forked repo 
+2.	Click Compare & pull request 
+3.	Base → original repo 
+4.	Compare → your GIT-EXAM branch 
+5.	Click Create Pull Request 
+________________________________________
+🔹 Step 9: Resolve Merge Conflicts (If Any)
+git pull origin main
+If conflict appears:
+<<<<<<< HEAD
+your code
+=======
+other code
+>>>>>>> branch
+👉 Fix manually → then:
+git add .
+git commit -m "Resolved conflicts"
+git push
+________________________________________
+🔹 Step 10: Update PR After Changes
+👉 After pushing:
+•	PR updates automatically 
+•	Reviewer can approve and merge 
+________________________________________
+🧠 Viva Points (VERY IMPORTANT ⭐)
+•	Clone → copy repo locally 
+•	Fork → create personal copy 
+•	Branch → isolate feature development 
+•	Pull Request → propose changes 
+•	Merge Conflict → occurs when same file edited
+
